@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(236, 255, 127);
+  font-family: verdana;
+}
+
+.section.product {
+  margin: 3rem 0;
+}
+
+.section.subscribe {
+  background: #e1e1e1;
+  padding: 5rem 0;
+}
+.section.subscribe > .container {
+  padding: 0 15rem;
+}
+.section.footer .col {
+  text-align: center;
+}
+.footer-bottom {
+  background: #363636;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.search-form {
+  margin-left: 3rem;
+}
+
+@media (max-width: 991px) {
+  .section.subscribe > .container {
+    padding: 0 10rem;
+  }
+  .search-form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section.subscribe > .container {
+    padding: 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .section.subscribe > .container {
+    padding: none;
+  }
+}
+
+.navbar {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  transition: all 1s ease;
+}
+.navbar a.navbar-brand {
+  color: white;
+}
+.navbar a.nav-link {
+  color: white !important;
+}
+.navbar.skuyBar {
+  padding: 0.6rem;
+  box-shadow: 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: white;
+  margin: 0.2rem;
+  border-radius: 10px;
+  padding: 0.3rem 1rem !important;
+  border: 2px solid white;
+}
+
+.product-card {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  flex: 0 0 50%;
+  padding: 1rem;
+  min-height: 280px;
+  background: linear-gradient(45deg, #ff5100, #ffae00) !important;
+  border-radius: 15px;
+  box-shadow: 0.1rem 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.product-card h5 {
+  color: white;
+  margin-bottom: 1px;
+}
+.product-card .stars {
+  margin-bottom: 1rem;
+}
+.product-card .img-top {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.product-card .img-top img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.card-horizontal {
+  overflow: hidden;
+}
+.card-horizontal .items {
+  float: left;
+  padding: 0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.form-control,
+.card,
+.btn {
+  border-radius: 0;
+}
+
+.footer-link {
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
+  background: #c7c7c7;
+}
+
+.footer-link a {
+  color: #525252;
+  text-decoration: none;
+  margin-right: 13px;
+  transition: all 0.5s;
+}
+.footer-link a:hover {
+  color: white;
+}
+
+.section.footer .col-lg-6 .text-container {
+  padding-top: 3rem;
+}
+
+.section.footer {
+  background: #bfbfbf;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.search-form input {
+  width: 100px;
+  position: relative;
+}
+.search-form .btn {
+  right: 0;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+}
