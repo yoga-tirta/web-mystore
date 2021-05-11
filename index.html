@@ -1,16 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MyStore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <p>Hello world</p>
-    <h1>Yoga tirta</h1>
-    <h2>Informatika</h2>
-    <h3>Hanif Santoso</h3>
-    <h1>GAAAAAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSSINNNNNN</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <a href="index.html" class="navbar-brand"> <img src="assets/images/icon.png" height="24" style="margin-top: -0.4rem" /> MyStore </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mr-auto">
+          <form class="search-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Here" style="border-radius: 10px" />
+              <button class="btn btn-danger">
+                <img src="assets/images/search.png" alt="" height="20" />
+              </button>
+            </div>
+          </form>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="katalog.html" class="nav-link">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a href="keranjang.html" class="nav-link">Keranjang</a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link btn btn-sm btn-outline-custom">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="carousel slide" id="mainCar" data-ride="carousel" style="margin-top: 3.3rem">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/slide/1.png" alt="" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slide/1.png" alt="" class="d-block w-100" />
+        </div>
+      </div>
+
+      <a href="#mainCar" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <a href="#mainCar" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+    </div>
+
+    <div class="section product">
+      <div class="container">
+        <div class="row">
+          <di class="col">
+            <h2>Best Product</h2>
+
+            <div class="card-horizontal">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="product-card">
+                    <div class="img-top">
+                      <img class="" src="assets/images/jenang-syabun-tulungagung.jpg" alt="" />
+                    </div>
+                    <h5>
+                      Rambak
+                      <small class="float-right">Rp 1000</small>
+                    </h5>
+                    <div class="stars">
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                    </div>
+                    <button class="btn btn-outline-custom btn-block">Order</button>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="product-card">
+                    <div class="img-top">
+                      <img class="" src="assets/images/jenang-syabun-tulungagung.jpg" alt="" />
+                    </div>
+                    <h5>
+                      Rambak
+                      <small class="float-right">Rp 1000</small>
+                    </h5>
+                    <div class="stars">
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                    </div>
+                    <button class="btn btn-outline-custom btn-block">Order</button>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="product-card">
+                    <div class="img-top">
+                      <img class="" src="assets/images/jenang-syabun-tulungagung.jpg" alt="" />
+                    </div>
+                    <h5>
+                      Rambak
+                      <small class="float-right">Rp 1000</small>
+                    </h5>
+                    <div class="stars">
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                    </div>
+                    <button class="btn btn-outline-custom btn-block">Order</button>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="product-card">
+                    <div class="img-top">
+                      <img class="" src="assets/images/jenang-syabun-tulungagung.jpg" alt="" />
+                    </div>
+                    <h5>
+                      Rambak
+                      <small class="float-right">Rp 1000</small>
+                    </h5>
+                    <div class="stars">
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                      <img src="assets/images/star.png" alt="" height="16" />
+                    </div>
+                    <button class="btn btn-outline-custom btn-block">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </di>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="assets/images/promo/1.png" class="d-block w-100" />
+    </div>
+
+    <div class="section subscribe">
+      <div class="container text-center">
+        <h2>Subscribe now to get all special offer every day!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil psam, sunt ad molestiae asperiores hic volupt</p>
+
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Your email..." />
+            <div class="input-group-append">
+              <button class="btn btn-secondary" style="background: #252525">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="section footer-link text-center">
+      <a href="kontak.html">Contact</a>
+      <a href="#">Registrasi</a>
+      <a href="#">Track order</a>
+      <a href="#">About us</a>
+    </div>
+    <div class="section footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-6">
+            <h3>#mystore</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi illum sed culpa non quibusdam facere in deleniti, debitis, reiciendis praesentium voluptate libero at sunt. Quibusdam, non! Deleniti, molestias earum!
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h4>Follow me on..</h4>
+              <a href="#" class="btn btn-sm btn-outline-primary" style="width: 30px">f</a>
+              <a href="#" class="btn btn-sm btn-outline-primary" style="width: 30px">t</a>
+              <a href="#" class="btn btn-sm btn-outline-primary" style="width: 30px">i</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2021 by Me All Right</span>
+    </div>
+
+    <script>
+      // setTimeout(() => window.location.reload(), 2000);
+      window.addEventListener("scroll", (e) => {
+        var navbarPos = $(window).scrollTop();
+        if (navbarPos > 0) {
+          $(".navbar").addClass("skuyBar");
+        } else {
+          $(".navbar").removeClass("skuyBar");
+        }
+      });
+    </script>
   </body>
 </html>
