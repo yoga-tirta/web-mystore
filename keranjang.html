@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyStore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <a href="index.html" class="navbar-brand"> <img src="assets/images/icon.png" height="24" style="margin-top: -0.4rem" /> MyStore </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mr-auto">
+          <form class="search-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Here" style="border-radius: 10px" />
+              <button class="btn btn-danger">
+                <img src="assets/images/search.png" alt="" height="20" />
+              </button>
+            </div>
+          </form>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="katalog.html" class="nav-link">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a href="keranjang.html" class="nav-link">Keranjang</a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link btn btn-sm btn-outline-custom">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 5rem">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">product</div>
+            <div class="card-body">
+              <table class="table table-hover">
+                <thead>
+                  <th>#</th>
+                  <th>Nama</th>
+                  <th>Stok</th>
+                  <th>Total Harga</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Gethunk Pisang</td>
+                    <td>2</td>
+                    <td>Rp 10.000</td>
+                  </tr>
+
+                  <tr>
+                    <th colspan="3">Total</th>
+                    <td>Rp 10.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">Total Pembayaran</div>
+            <div class="card-body">
+              <ul>
+                <li>Total Barang : 10</li>
+                <li>Total Harga : Rp 1000</li>
+              </ul>
+            </div>
+            <div class="card-footer text-right">
+              <div>
+                <button class="btn btn-danger btn-sm">Kembali</button>
+                <button class="btn btn-success btn-sm">Bayar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // setTimeout(() => window.location.reload(), 2000);
+      window.addEventListener("scroll", (e) => {
+        var navbarPos = $(window).scrollTop();
+        if (navbarPos > 0) {
+          $(".navbar").addClass("skuyBar");
+        } else {
+          $(".navbar").removeClass("skuyBar");
+        }
+      });
+    </script>
+  </body>
+</html>
